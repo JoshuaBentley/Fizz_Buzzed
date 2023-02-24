@@ -6,7 +6,7 @@
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Create a New Product:</h3>
+    <h3>Creat shopping cart:</h3>
 
     <form class="form new-Product-form">
       <div class="form-group">
@@ -14,15 +14,15 @@
         <input class="form-input" type="text" id="Product-name" name="Product-name" />
       </div>
       <div class="form-group">
-        <label for="Product-funding">needed funding ($):</label>
+        <label for="Product-funding">Product weight:</label>
         <input class="form-input" type="number" id="Product-funding" name="Product-funding" />
       </div>
       <div class="form-group">
-        <label for="Product-desc">description:</label>
+        <label for="Product-desc">Quantity:</label>
         <textarea class="form-input" id="Product-desc" name="Product-desc"></textarea>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
+        <button type="submit" class="btn btn-primary">Add to Cart</button>
       </div>
     </form>
   </div>
@@ -37,7 +37,7 @@
         <h4><a href="/Product/{{Product.id}}">{{Product.name}}</a></h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{Product.id}}">DELETE</button>
+        <button class="btn btn-sm btn-danger" data-id="{{Product.id}}">Remove from Cart</button>
       </div>
     </div>
     {{/each}}

@@ -24,7 +24,7 @@ Product.init(
       defaultValue: DataTypes.NOW,
     },
     needed_funding: {
-      type: DataTypes.FLOAT,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     user_id: {
