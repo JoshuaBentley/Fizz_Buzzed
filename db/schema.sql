@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS fizzBuzzed_db;
-CREATE DATABASE fizzBuzzed_db;
+DROP DATABASE IF EXISTS crowdfund_db;
+CREATE DATABASE crowdfund_db;
