@@ -8,10 +8,9 @@
       <a href="/product/{{product.id}}">{{product.name}}</a>
     </h2>
     <p>
-      <span for="img" aria-label="money">💲</span>
+      <span for="img" aria-label="money"></span>
       <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount product.needed_funding}}</span>
-      needed!
+      <span class="dollar-amount">{{product.needed_funding}}</span>
     </p>
     <p>Created by {{product.user.name}} on {{format_date product.date_created}}</p>
   </div>
