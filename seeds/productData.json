@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Best Flower in town",
+    "description": "Sativa, Indica, or Hybrid! We have it all and it will send you to Mars!",
+    "needed_funding": 5000
+  },
+  {
+    "name": "Concentrate",
+    "description": "Shatter, Badder, Crumble, Sugar Wax, Rosin! We have the Dankest Dabs!",
+    "needed_funding": 10000
+  },
+  {
+    "name": "Yum yum Edibles",
+    "description": "Gummies, Hard candies, Lolli pops, and Medicated soda! We start as low as 100mg and go up to 2000mg. Stop by Fizz Buzzed today!",
+    "needed_funding": 800
+  }
+]
