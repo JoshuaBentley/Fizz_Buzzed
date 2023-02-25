@@ -1,0 +1,61 @@
+#menu-tab-pane {
+    display: grid;
+    place-items: center;
+    margin-top: 15vmin;
+}
+
+.card-group,
+.card {
+  aspect-ratio: 5/7;
+}
+
+.card-group,
+.big-card {
+  width: 30vmin;
+}
+
+.card {
+  aspect-ratio: 5/7;
+  border-radius: 1vmin;
+  position: absolute;
+  transition: transform 800ms cubic-bezier(0.15, 0.77, 0.33, 0.93);
+}
+
+.big-card {
+  width: 30vmin;
+}
+.big-card:nth-child(1) {
+  background-color: aqua;
+  transform: translate(10%, -7%) rotate(4deg);
+}
+
+.big-card:nth-child(2) {
+    background-image: url(/Project_2/assets/images/Screenshot\ 2023-02-22\ at\ 11.01.19\ PM.png);
+    background-position: center;
+    background-size: cover;
+    transform: translate(4%, -8%) rotate(-2deg);
+}
+
+.big-card:nth-child(3) {
+    background-color: orange;
+    background-size: cover;
+    transform: translate(0%, -6%) rotate(1deg);
+}
+
+.card-group:hover > .card {
+    box-shadow: -2vmin 2vmin 3vmin rgba(0, 0, 0, 0.4);
+}
+.card-group:hover > .big-card:nth-child(1) {
+  transform: translate(-70%, 15%) rotate(-20deg);
+}
+.card-group:hover > .big-card:nth-child(2) {
+  transform: translate(-2%, -10%) rotate(2deg);
+}
+.card-group:hover > .big-card:nth-child(3) {
+  transform: translate(70%, 15%) rotate(18deg);
+}
+#bc1:hover,
+#bc2:hover,
+#bc3:hover {
+  z-index: 1;
+}

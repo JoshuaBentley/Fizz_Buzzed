@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { User, Project } = require('../models');
+const { User, Product } = require('../models');
 
 const userData = require('./userData.json');
 const productData = require('./productData.json');
@@ -13,8 +13,8 @@ const seedDatabase = async () => {
   });
 
   for (const product of productData) {
-    await Project.create({
-      ...project,
+    await Product.create({
+      ...product,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
