@@ -1009,12 +1009,15 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
-  color: #d9e9e8;
+  background-color: #42d824;
+  color: #000000;
 }
 
 .btn.btn-primary:hover {
-  background-color: #57779a;
+  background-color: #49f955;
+  cursor: grab;
+  transform: rotate(360deg);
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .btn.btn-danger {
@@ -1612,6 +1615,9 @@ form [type='radio'] {
     align-content: center;
   }
 }
+.inputh2 {
+  color: gold;
+}
 
 /* col-xl */
 @media screen and (min-width: 1200px) {
@@ -1702,4 +1708,8 @@ form [type='radio'] {
   .align-content-center-xl {
     align-content: center;
   }
+
+}
+.inputh2 {
+  color: gold;
 }
