@@ -8,10 +8,14 @@ header {
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
 }
+body {
+  background-color: rgba(95, 158, 160, 0.733);
+}
 
 .title {
   font-size: 12vmin;
   font-family: "Geostar", cursive;
+  color: cadetblue;
 }
 
 .no-button {
