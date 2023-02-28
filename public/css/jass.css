@@ -1713,3 +1713,9 @@ form [type='radio'] {
 .inputh2 {
   color: gold;
 }
+
+@media (min-width: 1025px) {
+  .h-custom {
+  height: 100vh !important;
+  }
+  }
