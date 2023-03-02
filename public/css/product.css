@@ -1,3 +1,4 @@
-.card {
+.card,
+.card-img-top {
   aspect-ratio: 5/7;
 }
