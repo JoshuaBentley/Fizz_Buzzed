@@ -1,97 +1,23 @@
-{{!-- <div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
-  <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <span for="img" aria-label="money">💲</span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
-    needed
-  </p>
-  <p>
-    <button class="btn btn-primary">Buy these Products!</button>
-  </p>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="/images/bud6.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Add To Cart</a>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/product.css">
+
+<div class="menu-tab-pane">
+  <div class="cards-group">
+        <div class="big-card catcard" id="bc3"></div>
+        <div class="big-card catcard" id="bc2"></div>
+        <div class="big-card catcard" id="bc1"></div>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
-  <img src="/images/bud5.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Add To Cart</a>
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="/images/brownies.jpeg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="/images/bud2.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="/images/bud4.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Add To Cart</a>
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="/images/bud3.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Add To Cart</a>
-  </div>
-</div> --}}
-{{!-- <div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
-  <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <span for="img" aria-label="money">💲</span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
-    needed
-  </p>
-  <p>
-    <button class="btn btn-primary">Buy these Products!</button>
-  </p>
-</div> --}}
 
 <div class="row">
-    <h1></h1>
+    <h1 class="catTitles">Flower</h1>
   {{!-- col-md-4 is for the spacing of the boxes --}}
   <div class="col-md-3">
     <div class="card" >
-      <img src="/images/bud6.jpg" class="card-img-top" alt="...">
-      {{!-- had a huge issue trying to get images to sorce file path doesnt need to go through public only through images --}}
-      <div class="card-body">
-        <h5 class="card-title">Ship Wreck</h5>
-        <p class="card-text">An intense strain that is a result of crossing Trainwreck and Mothership, Shipwreck can exceed your expectations. The cannabis strain is mostly sativa with a 60/40 sativa/indica ratio and 12  15 % THC content. The Shipwreck plant can be grown indoors but it will truly thrive outdoors. An excellent choice for novice gardeners, the plant is harvested in October and has a moderate yield with a flowering time of 9 10 weeks. The plant produces several super resinous and thick buds that are tinted with shades of bright green and neon purple. The strain can help fight depression, anxiety, fatigue, migraine, inflammation, insomnia and eating disorders. The pungent skunky and diesel like aroma of this strain teamed up with the mouth-watering flavors of spice, citrus and dank with hints of lingering sweetness offer a good toke to those who want to relieve stress. The strain is quick to settle in and offers a buzz that stays for hours on end. A few tokes will give you a euphoric high and get you stoned to the core, after which you will no longer feel any pain.</p>
-        <a href="#" class="btn btn-primary">Add To Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="card" >
-      <img src="/images/bud1.jpg" class="card-img-top" alt="...">
+      <div class="img greenCrack"></div>
       <div class="card-body">
         <h5 class="card-title">Green Crack</h5>
         <p class="card-text">A perennial favorite, Green Crack is a sativa-dominant hybrid that was bred by inbreeding Skunk #1. Green Crack is usually sativa-dominant, but there's also a less popular indica-heavy version of the strain. Green Crack got its name from Snoop Dogg, though it's also known as Green Cush or simply Cush among smokers who prefer not to reference cocaine. This highly addictive strain is massively potent, with top THC levels reaching 24%. It has a sativa/indica ratio of 65:35. The high is decidedly cerebral, with a big mood boost and a jolt of energy. This strain spurs creativity and helps patients get things done. It's most effective in treating anxiety and depression, along with ADHD, PTSD, and migraines. Green Crack has a sweet flavor with tropical and citrus notes. The buds are dense and tight. Dry mouth occurs frequently, while dry eyes, dizziness, and paranoia, happen less often. It's most common in the Pacific Northwester, California, Arizona, and Colorado. But it can be found almost anywhere else with relative ease. It's one of the most popular strains on the black market for this reason.</p>
@@ -101,7 +27,7 @@
   </div>
   <div class="col-md-3">
     <div class="card" >
-      <img src="/images/bud2.jpg" class="card-img-top" alt="...">
+      <div class="img chemdawg"></div>
       <div class="card-body">
         <h5 class="card-title">Chemdawg</h5>
         <p class="card-text">With a near-even balance between sativa and indica (sativa/indica ratio of 45/55), Chemdawg, also known as Chemdog, delivers on both fronts. A clear cerebral high drives creativity while a stony, sleepy body high fights insomnia and relaxes the muscles. This strain has THC levels up to 19%, meaning it's more potent than most. It has a powerful spicy, plant-like taste and smell with a hint of diesel; the aroma alone can alert snoopy neighbors to even a carefully concealed pot grow. Not surprisingly, Chemdawg is used to produce Sour Diesel, one of the world's most popular strains. Little is known about Chemdawg's history or genetics, though there are urban legends involving a Grateful Dead concert, a handful of seeds, and a grower named Chemdog. Best for anxiety and pain, this strain is also helpful with depression and ADHD, as well as migraines, arthritis, and PMS. Dry mouth and dry eyes are possible when using this strain, while other side effects are less likely. Chemdawg is most popular on the West Coast, in Nevada, and in Colorado. It's possible to find on the black market but doesn't come around very often.</p>
@@ -111,7 +37,7 @@
   </div>
   <div class="col-md-3">
     <div class="card" >
-      <img src="/images/bud3.jpg" class="card-img-top" alt="...">
+      <div class="img skywalker"></div>
       <div class="card-body">
         <h5 class="card-title">Skywalker</h5>
         <p class="card-text">Skywalker is a popular strain across the United States, a hybrid with an even 50:50 sativa/indica ratio. Its THC levels top off at about 15 percent, making this an average to below-average strain in terms of potency. But it makes up for that with its mellow body high and mental clarity, plus a pleasing aroma and flavor. It's a cross of Blueberry and Mazar-I-Sharif, both famous strains in their own right. The high is mostly relaxed, with euphoria and a mood boost. This is a good strain for insomnia, as well as anxiety, ADHD, bipolar disorder, migraines, and PMS. It's particularly effective at pain relief. Dry mouth and red eyes are likely, while other adverse are much more limited. The taste of this strain is pungent and sweet, with earthy tones. Skywalker is most commonly found on the West Coast, in Arizona, and in Colorado. But it's relatively easy to find on any legal market, as well as the black market in many parts of the country. The indica stress relief of this versatile strain make it a good choice for patients looking for a break.</p>
@@ -121,21 +47,21 @@
   </div>
   <div class="col-md-3">
     <div class="card" >
-      <img src="/images/bud4.jpg" class="card-img-top" alt="...">
+      <div class="img gsc"></div>
       <div class="card-body">
         <h5 class="card-title">Girl Scout Cookie</h5>
-        <p class="card-text">Girl Scout Cookies is an indica-dominant hybrid with a strong sativa component (40:60 sativa/indica ratio). This strain can reach THC levels of up to 28%, meaning it's one of the most potent strains available to medical marijuana patients. This strain provides the best aspects of both sativa and indica, and the high is powerful, happy, and euphoric, but with couch-lock body effects and feelings of lethargy. Girl Scout Cookies tastes sweet and earthy, and it smells much the same. It's most effective at treating anxiety, stress, and depression, though it's also good for appetite. Dry mouth is the only likely adverse effect, though others are possible. This strain began as a crossbreed of OG Kush and a near-even hybrid; (Durban Poison X F1). Girl Scout Cookies first appeared in California and is now one of the most popular strains in North America, where sells best on the West Coast and in Michigan. The high lasts for hours, making Girl Scout Cookies a good deal in most places. It can be difficult to grow, but it's fast becoming a staple among home cultivators.
-</p>
-<a href="#" class="btn btn-primary">Add To Cart</a>
-</div>
-</div>
+        <p class="card-text">Girl Scout Cookies is an indica-dominant hybrid with a strong sativa component (40:60 sativa/indica ratio). This strain can reach THC levels of up to 28%, meaning it's one of the most potent strains available to medical marijuana patients. This strain provides the best aspects of both sativa and indica, and the high is powerful, happy, and euphoric, but with couch-lock body effects and feelings of lethargy. Girl Scout Cookies tastes sweet and earthy, and it smells much the same. It's most effective at treating anxiety, stress, and depression, though it's also good for appetite. Dry mouth is the only likely adverse effect, though others are possible. This strain began as a crossbreed of OG Kush and a near-even hybrid; (Durban Poison X F1). Girl Scout Cookies first appeared in California and is now one of the most popular strains in North America, where sells best on the West Coast and in Michigan. The high lasts for hours, making Girl Scout Cookies a good deal in most places. It can be difficult to grow, but it's fast becoming a staple among home cultivators.</p>
+        <a href="#" class="btn btn-primary">Add To Cart</a>
+      </div>
+    </div>
 
   </div>
 </div>
+    <h1 class="catTitles">Edibles</h1>
 <div class="row">
   <div class="col-md-3">
     <div class="card" >
-      <img src="/images/chocbars.jpeg" class="card-img-top" alt="...">
+      <div class="img chocBars"></div>
       <div class="card-body">
         <h5 class="card-title">Chocolate Bar</h5>
         <p class="card-text">If you're a chocolate lover, you won't want to miss out on this delectable chocolate bar! From the moment you unwrap it, the rich aroma of chocolate wafts up to tantalize your senses, setting the stage for a truly indulgent experience.
@@ -153,23 +79,7 @@ In short, this chocolate bar is an absolute must-try for any chocolate lover. Wi
   </div>
   <div class="col-md-3">
     <div class="card" >
-      <img src="/images/chocedibles.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Chocolate Balls</h5>
-        <p class="card-text">If you're looking for a truly decadent and indulgent treat, look no further than these delicious chocolate balls! With a smooth and creamy texture and a rich, intense chocolate flavor, these chocolate balls are sure to satisfy even the most discerning sweet tooth.
-
-But what really sets these chocolate balls apart is their unique shape and presentation. Each ball is perfectly crafted, with a beautiful glossy finish that's almost too pretty to eat. And because they're small and bite-sized, they're the perfect snack to enjoy on the go or to share with friends and family.
-
-But don't let their small size fool you - these chocolate balls are packed with flavor and are sure to satisfy even the biggest chocolate cravings. And because they're made with high-quality ingredients and no artificial preservatives, you can feel good about indulging in this sweet treat.
-
-Whether you're a chocolate lover or simply looking for a delicious and indulgent snack, these chocolate balls are sure to impress. So why wait? Treat yourself to the decadent pleasure of these delectable chocolate balls today!</p>
-        <a href="#" class="btn btn-primary">Add To Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="card" >
-      <img src="/images/cookies.jpeg" class="card-img-top" alt="...">
+      <div class="img cookies"></div>
       <div class="card-body">
         <h5 class="card-title">Chocolate Chip Cookies</h5>
         <p class="card-text">There's nothing quite like a freshly baked chocolate chip cookie, and these cookies are no exception! With a crispy exterior and a soft and chewy center, these cookies are the perfect combination of texture and flavor.
@@ -187,7 +97,7 @@ In short, if you're looking for a classic cookie that's sure to satisfy any swee
   </div>
   <div class="col-md-3">
     <div class="card" >
-      <img src="/images/brownies.jpeg" class="card-img-top" alt="...">
+      <div class="img brownies"></div>
       <div class="card-body">
         <h5 class="card-title">Brownies</h5>
         <p class="card-text">If you're a chocolate lover, you won't want to miss out on these decadent brownies! With a fudgy, moist texture and a rich chocolate flavor, each bite is like a little slice of heaven.
@@ -205,7 +115,7 @@ And because they're made with real ingredients and no artificial flavors or pres
   </div>
   <div class="col-md-3">
     <div class="card" >
-      <img src="/images/gummies.jpeg" class="card-img-top" alt="...">
+      <div class="img gummies"></div>
       <div class="card-body">
         <h5 class="card-title">Gummies</h5>
         <p class="card-text">These gummy bears are a true delight for anyone with a sweet tooth! With their bright colors and cute bear shape, they're the perfect candy.
@@ -222,20 +132,12 @@ Overall, if you're looking for a fun and delicious candy that's sure to satisfy 
     </div>
   </div>
 </div>
+    <h1 class="catTitles">Concentrates</h1>
+
 <div class="row">
   <div class="col-md-3">
     <div class="card" >
-      <img src="/images/Shipwreck.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Shipwreck</h5>
-        <p class="card-text">An intense strain that is a result of crossing Trainwreck and Mothership, Shipwreck can exceed your expectations. The cannabis strain is mostly sativa with a 60/40 sativa/indica ratio and 12 15 % THC content. The Shipwreck plant can be grown indoors but it will truly thrive outdoors. An excellent choice for novice gardeners, the plant is harvested in October and has a moderate yield with a flowering time of 9  10 weeks. The plant produces several super resinous and thick buds that are tinted with shades of bright green and neon purple. The strain can help fight depression, anxiety, fatigue, migraine, inflammation, insomnia and eating disorders. The pungent skunky and diesel like aroma of this strain teamed up with the mouth-watering flavors of spice, citrus and dank with hints of lingering sweetness offer a good toke to those who want to relieve stress. The strain is quick to settle in and offers a buzz that stays for hours on end. A few tokes will give you a euphoric high and get you stoned to the core, after which you will no longer feel any pain.</p>
-        <a href="#" class="btn btn-primary">Add To Cart</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="card" >
-      <img src="/images/Green-Crack.webp" class="card-img-top" alt="...">
+      <div class="img ggcon"></div>
       <div class="card-body">
         <h5 class="card-title">Green Crack</h5>
         <p class="card-text">A perennial favorite, Green Crack is a sativa-dominant hybrid that was bred by inbreeding Skunk #1. Green Crack is usually sativa-dominant, but there's also a less popular indica-heavy version of the strain. Green Crack got its name from Snoop Dogg, though it's also known as Green Cush or simply Cush among smokers who prefer not to reference cocaine. This highly addictive strain is massively potent, with top THC levels reaching 24%. It has a sativa/indica ratio of 65:35. The high is decidedly cerebral, with a big mood boost and a jolt of energy. This strain spurs creativity and helps patients get things done. It's most effective in treating anxiety and depression, along with ADHD, PTSD, and migraines. Green Crack has a sweet flavor with tropical and citrus notes. The buds are dense and tight. Dry mouth occurs frequently, while dry eyes, dizziness, and paranoia, happen less often. It's most common in the Pacific Northwester, California, Arizona, and Colorado. But it can be found almost anywhere else with relative ease. It's one of the most popular strains on the black market for this reason.</p>
@@ -245,7 +147,7 @@ Overall, if you're looking for a fun and delicious candy that's sure to satisfy 
   </div>
   <div class="col-md-3">
     <div class="card" >
-      <img src="/images/Chemdawg.png" class="card-img-top" alt="...">
+      <div class="img chemcon"></div>
       <div class="card-body">
         <h5 class="card-title">Chemdawg</h5>
         <p class="card-text">With a near-even balance between sativa and indica (sativa/indica ratio of 45/55), Chemdawg, also known as Chemdog, delivers on both fronts. A clear cerebral high drives creativity while a stony, sleepy body high fights insomnia and relaxes the muscles. This strain has THC levels up to 19%, meaning it's more potent than most. It has a powerful spicy, plant-like taste and smell with a hint of diesel; the aroma alone can alert snoopy neighbors to even a carefully concealed pot grow. Not surprisingly, Chemdawg is used to produce Sour Diesel, one of the world's most popular strains. Little is known about Chemdawg's history or genetics, though there are urban legends involving a Grateful Dead concert, a handful of seeds, and a grower named Chemdog. Best for anxiety and pain, this strain is also helpful with depression and ADHD, as well as migraines, arthritis, and PMS. Dry mouth and dry eyes are possible when using this strain, while other side effects are less likely. Chemdawg is most popular on the West Coast, in Nevada, and in Colorado. It's possible to find on the black market but doesn't come around very often.</p>
@@ -255,7 +157,7 @@ Overall, if you're looking for a fun and delicious candy that's sure to satisfy 
   </div>
   <div class="col-md-3">
     <div class="card" >
-      <img src="/images/Skywalker.png" class="card-img-top" alt="...">
+      <div class="img skycon"></div>
       <div class="card-body">
         <h5 class="card-title">Skywalker</h5>
         <p class="card-text">Skywalker is a popular strain across the United States, a hybrid with an even 50:50 sativa/indica ratio. Its THC levels top off at about 15 percent, making this an average to below-average strain in terms of potency. But it makes up for that with its mellow body high and mental clarity, plus a pleasing aroma and flavor. It's a cross of Blueberry and Mazar-I-Sharif, both famous strains in their own right. The high is mostly relaxed, with euphoria and a mood boost. This is a good strain for insomnia, as well as anxiety, ADHD, bipolar disorder, migraines, and PMS. It's particularly effective at pain relief. Dry mouth and red eyes are likely, while other adverse are much more limited. The taste of this strain is pungent and sweet, with earthy tones. Skywalker is most commonly found on the West Coast, in Arizona, and in Colorado. But it's relatively easy to find on any legal market, as well as the black market in many parts of the country. The indica stress relief of this versatile strain make it a good choice for patients looking for a break.</p>
@@ -265,7 +167,7 @@ Overall, if you're looking for a fun and delicious candy that's sure to satisfy 
   </div>
   <div class="col-md-3">
     <div class="card" >
-      <img src="/images/Girl-Scout-Cookies.png" class="card-img-top" alt="...">
+      <div class="img gsccon"></div>
       <div class="card-body">
         <h5 class="card-title">Girl Scout Cookies</h5>
         <p class="card-text">Girl Scout Cookies is an indica-dominant hybrid with a strong sativa component (40:60 sativa/indica ratio). This strain can reach THC levels of up to 28%, meaning it's one of the most potent strains available to medical marijuana patients. This strain provides the best aspects of both sativa and indica, and the high is powerful, happy, and euphoric, but with couch-lock body effects and feelings of lethargy. Girl Scout Cookies tastes sweet and earthy, and it smells much the same. It's most effective at treating anxiety, stress, and depression, though it's also good for appetite. Dry mouth is the only likely adverse effect, though others are possible. This strain began as a crossbreed of OG Kush and a near-even hybrid; (Durban Poison X F1). Girl Scout Cookies first appeared in California and is now one of the most popular strains in North America, where sells best on the West Coast and in Michigan. The high lasts for hours, making Girl Scout Cookies a good deal in most places. It can be difficult to grow, but it's fast becoming a staple among home cultivators.</p>
@@ -287,10 +189,8 @@ Overall, if you're looking for a fun and delicious candy that's sure to satisfy 
 
 
 
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="../public/css/product.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="./js/profile.js"></script>
