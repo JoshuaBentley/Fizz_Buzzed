@@ -1,0 +1,8 @@
+.imgholder {
+  display: flex;
+  justify-content: center;
+  margin: 10vmin;
+}
+p {
+  font-size: 20px;
+}
