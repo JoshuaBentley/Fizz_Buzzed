@@ -1,3 +1,150 @@
-.card {
+body {
+  background-color: rgba(95, 158, 160, 0.733);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30vmin;
+  background-image: url(../images/Chemdawg.png);
+  background-position: center;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card,
+.card-img-top,
+.img {
   aspect-ratio: 5/7;
+}
+
+/* flower images */
+.greenCrack {
+  background-image: url(../images/greencrackbud.png);
+  background-position: top;
+  background-size: cover;
+}
+.chemdawg {
+  background-image: url(../images/chemdawgg.png);
+  background-position: top;
+  background-size: cover;
+}
+.skywalker {
+  background-image: url(../images/Skywalkerbud.png);
+  background-position: top;
+  background-size: cover;
+}
+.gsc {
+  background-image: url(../images/gsc.png);
+  background-position: top;
+  background-size: cover;
+}
+
+/* edible images */
+
+.chocBars {
+  background-image: url(../images/chocbars.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.cookies {
+  background-image: url(../images/cooookies.png);
+  background-position: center;
+  background-size: cover;
+}
+.brownies {
+  background-image: url(../images/brownies.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.gummies {
+  background-image: url(../images/gummies.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* images for concentrates */
+.ggcon,
+.skycon {
+  background-image: url(../images/liveresin.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.chemcon,
+.gsccon {
+  background-image: url(../images/sugarwax.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* CSS for the cards */
+
+.menu-tab-pane {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin: 5vmin 0 15vmin;
+}
+
+.cards-group,
+.catcard {
+  aspect-ratio: 5/7;
+  border: none;
+}
+
+.cards-group,
+.big-card {
+  width: 30vmin;
+}
+
+.catcard {
+  aspect-ratio: 5/7;
+  border-radius: 1vmin;
+  position: absolute;
+  transition: transform 800ms cubic-bezier(0.15, 0.77, 0.33, 0.93);
+}
+
+.big-card {
+  width: 30vmin;
+}
+.big-card:nth-child(1) {
+  background-image: url(../images/chocedibles.png);
+  background-position: center;
+  background-size: cover;
+  transform: translate(10%, -7%) rotate(4deg);
+}
+
+.big-card:nth-child(2) {
+  background-image: url(../images/Shipwreck.png);
+  background-position: center;
+  background-size: cover;
+  transform: translate(4%, -8%) rotate(-2deg);
+}
+
+.big-card:nth-child(3) {
+  background-image: url(../images/concentrates.jpeg);
+  background-position: center;
+  background-size: cover;
+  transform: translate(0%, -6%) rotate(1deg);
+}
+
+.cards-group:hover > .card {
+  box-shadow: -2vmin 2vmin 3vmin rgba(0, 0, 0, 0.4);
+}
+.cards-group:hover > .big-card:nth-child(1) {
+  transform: translate(-70%, 15%) rotate(-20deg);
+}
+.cards-group:hover > .big-card:nth-child(2) {
+  transform: translate(-2%, -10%) rotate(2deg);
+}
+.cards-group:hover > .big-card:nth-child(3) {
+  transform: translate(70%, 15%) rotate(18deg);
+}
+#bc1:hover,
+#bc2:hover,
+#bc3:hover {
+  z-index: 1;
 }
