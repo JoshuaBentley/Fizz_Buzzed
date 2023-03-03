@@ -1,22 +1,6 @@
-<!-- Loop over each object in the products array -->
-{{#each products as |product| }}
-<div class="row mb-4 product">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{!-- {{{get_emoji}}} --}}
-      <a href="/product/{{product.id}}">{{product.name}}</a>
-    </h2>
-    <p>
-      <span for="img" aria-label="money"></span>
-      <!-- Pass needed_funding value to the helper function -->
-    </p>
-    <p>Created by {{product.user.name}} on {{format_date product.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{product.description}}
-    </p>
-  </div>
-</div>
-{{/each}}
+ <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.js"></script>
+    
+
+<h1 class=" list-inline">Welcome to Fizz Buzzed!</h1>
+<img src="../public/images/cannaoil.png" alt="" class="img-circle">

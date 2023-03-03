@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const {  User, Product } = require('../models');
 const withAuth = require('../utils/auth');
+const fs = require('fs');
+
 
 router.get('/', async (req, res) => {
   try {
@@ -30,6 +32,16 @@ router.get('/', async (req, res) => {
 router.get('/products', async(req, res) => {
   res.render('products');
 });
+
+
+const homepage = fs.readFileSync('views/homepage.handlebars', 'utf8');
+
+router.get('/homepage', async(req,res) => {
+  res.render('homepage', {
+    homepage
+  });
+});
+
 
 router.get('/product/:id', async (req, res) => {
   try {
