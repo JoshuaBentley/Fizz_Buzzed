@@ -1,11 +1,11 @@
 body {
-  background-color: rgba(95, 158, 160, 0.733);
+  background-color: rgba(95, 158, 160, 0.733) !important;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
   height: 30vmin;
   background-image: url(../images/Chemdawg.png);
   background-position: center;
@@ -17,6 +17,10 @@ header {
 .card-img-top,
 .img {
   aspect-ratio: 5/7;
+}
+
+.nav {
+  margin-bottom: 0;
 }
 
 /* flower images */
