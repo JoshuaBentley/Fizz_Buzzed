@@ -5,6 +5,22 @@ Fizz Buzzed is a full-stack application with a robust back end and fully intuiti
 
 [TOC]
 
+## Demo
+
+![screenshothome](https://user-images.githubusercontent.com/106099150/223022123-0d0da4cc-3a35-45b0-96b1-282e199d2cbb.png)
+
+
+![screenshotproduct](https://user-images.githubusercontent.com/106099150/223022174-96e2e380-ef65-4d9f-ae0a-5fbcf0ad2014.png)
+
+
+![screenshotlogin](https://user-images.githubusercontent.com/106099150/223022193-2d7504ed-d5ba-4adc-a4ff-e2c315b4f073.png)
+
+
+
+
+[fizzbuzzed-video.webm](https://user-images.githubusercontent.com/106099150/223022286-f65fab5e-ff48-45bd-8650-488f6b250cbf.webm)
+
+
 ## Links
 https://fizz-buzzed.herokuapp.com/
 
